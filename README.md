@@ -34,14 +34,14 @@ There may be some packet loss during the ping command execution due to the loss 
 
 You can issue ping commands between all hosts on the topology to verify that the topology is connected using the `pingall` command. A failed ping (either due to loss rates or misconfiguration) between a pair of hosts is marked by an `X`.
 
-## Datacentre Topology
+## Data Centre Topology
 
-`datacenter.py` can be used to emulate a custom, fan-in type datacentre topology, where there will be a top-level switch (tls) connected to a number of mid-level switches (mls), which are in turn connected to rack switches with a number of hosts connected to them. The custom topology is defined by 2 parameters, which are accepted as arguments to `datacenter.py`:
+`datacenter.py` can be used to emulate a custom, fan-in type data centre topology, where there will be a top-level switch (tls) connected to a number of mid-level switches (mls), which are in turn connected to rack switches with a number of hosts connected to them. The custom topology is defined by 2 parameters, which are accepted as arguments to `datacenter.py`:
 
 - `fi`: The fan-in rate, i.e. the number of mls' connected to the tls.
 - `n`: The number of hosts connected to each rack switch.
 
-Here's an example of a datacentre topology with `fi=2, n=5`:
+Here's an example of a data centre topology with `fi = 2` and `n = 5`:
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/87489775/125832199-3fcf9a6c-b097-4c82-9c68-b87bf3900136.png">
