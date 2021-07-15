@@ -1,6 +1,6 @@
 # Network Topologies and Simulations using Mininet
 
-The goal of this project is to represent network topologies and simulating basic network commands in Mininet, a network simulator that runs multiple Linux containers for individual hosts and uses <a href="openvswitch.org">Open vSwitch</a> for network device emulation.
+The goal of this project is to represent network topologies and simulating basic network commands in <a href="http://mininet.org">Mininet</a>, a network simulator that runs multiple Linux containers for individual hosts and uses <a href="openvswitch.org">Open vSwitch</a> for network device emulation.
 
 ## Defining Network Topologies
 
