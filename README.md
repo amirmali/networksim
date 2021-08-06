@@ -10,7 +10,7 @@ The goal of this project is to represent network topologies and simulating basic
   <img src="https://user-images.githubusercontent.com/87489775/125826918-bc79ba05-e099-46f4-a83b-96cabef27e85.png">
 </p>
 
-`topology.sh` is a script that produces some raw data for the TCP congestion window and bandwidth in Mbps and some figures. Here's an example of the bandwidth results:
+`topology.sh` is a script that produces raw data for the TCP congestion window and bandwidth in Mbps and some figures. Here's an example of the bandwidth results:
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/87489775/125826843-3fb08c8b-def8-44bf-b470-46c081c327b2.png">
@@ -24,15 +24,15 @@ The goal of this project is to represent network topologies and simulating basic
 
 ## Network Simulation
 
-Mininet's CLI is used to simulate basic network commands over our topology. `cli.py` loads our complex topoloy from earlier. After Mininet loads the topology, the Mininet command prompt is available: `mininet>`
+Mininet's CLI is used to simulate basic network commands over our topology. `cli.py` loads our complex topology from earlier. After Mininet loads the topology, the Mininet command prompt is available: `mininet>`
 
 To execute a command on one host, type the host name followed by the command. For example, to test the connection between `h1` and `h2`, we can command `h1` to ping `h2` with 10 packets of data and print out the results:
 
 `mininet> h1 ping h2 -c 10`
 
-There may be some packet loss during the ping command execution due to the loss rates on WiFi link between `s3` and `h2`.
+During the ping command execution, there may be some packet loss due to the loss rates on the WiFi link between `s3` and `h2`.
 
-You can issue ping commands between all hosts on the topology to verify that the topology is connected using the `pingall` command. A failed ping (either due to loss rates or misconfiguration) between a pair of hosts is marked by an `X`.
+You can issue ping commands between all hosts on the topology to verify that the topology is connected using the `pingall` command. A failed ping (due to loss rates or misconfiguration) between a pair of hosts is marked by an `X`.
 
 ## Data Centre Topology
 
